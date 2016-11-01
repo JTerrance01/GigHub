@@ -29,6 +29,7 @@ namespace GigHub.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken] // NOTE: (CSRF) used to combat
         public ActionResult Create(GigFormViewModel viewModel)
         {
             //  NOTE: Be wery of Inline variables - replaced below - ArtistId...
