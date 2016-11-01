@@ -32,16 +32,24 @@ namespace GigHub.Controllers
         public ActionResult Create(GigFormViewModel viewModel)
         {
             //  NOTE: Be wery of Inline variables - replaced below - ArtistId...
-            //var artistId = User.Identity.GetUserId(); --Inline varible
+            //  var artistId = User.Identity.GetUserId(); --Inline varible
 
             //  NOTE: 2 additional trips to Db not neccessary... set up foriegn keys for ArtistId and GenreId navagation properties
-            //var artist = _context.Users.Single(u => u.Id == artistId); -- trip 1
-            //var genre = _context.Genres.Single(g => g.Id == viewModel.Genre);  -- trip 2
+            //  var artist = _context.Users.Single(u => u.Id == artistId); -- trip 1
+            //  var genre = _context.Genres.Single(g => g.Id == viewModel.Genre);  -- trip 2
+
+
+            //  NOTE: Server-side Validation - ModelState.IsValid return Create viewModel
+            if (!ModelState.IsValid)
+            {
+                viewModel.Genres = _context.Genres.ToList();
+                return View("Create", viewModel);
+            }
 
             var gig = new Gig
             {
                 ArtistId = User.Identity.GetUserId(),
-                DateTime = viewModel.DateTime,
+                DateTime = viewModel.GetDateTime(),
                 GenreId = viewModel.Genre,
                 Venue = viewModel.Venue
             };
