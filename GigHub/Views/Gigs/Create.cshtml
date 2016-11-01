@@ -8,7 +8,9 @@
 
 @using (Html.BeginForm("Create", "Gigs"))
 {
+    //  NOTE: Implemented anti-AntiForgery token to combat against Cross-site request forgery
     @Html.AntiForgeryToken()
+
     <div class="form-group">
         @Html.LabelFor(m => m.Venue)
         @Html.TextBoxFor(m => m.Venue, new { @class = "form-control" })
