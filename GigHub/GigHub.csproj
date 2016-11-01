@@ -190,6 +190,14 @@
     <Compile Include="Migrations\201610312215421_PopulateGenresTable.Designer.cs">
       <DependentUpon>201610312215421_PopulateGenresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611010102538_UpdateArtistStringLength.cs" />
+    <Compile Include="Migrations\201611010102538_UpdateArtistStringLength.Designer.cs">
+      <DependentUpon>201611010102538_UpdateArtistStringLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611010126023_AddForeignKeyPropertiesToGig.cs" />
+    <Compile Include="Migrations\201611010126023_AddForeignKeyPropertiesToGig.Designer.cs">
+      <DependentUpon>201611010126023_AddForeignKeyPropertiesToGig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -281,6 +289,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610312215421_PopulateGenresTable.resx">
       <DependentUpon>201610312215421_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611010102538_UpdateArtistStringLength.resx">
+      <DependentUpon>201611010102538_UpdateArtistStringLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611010126023_AddForeignKeyPropertiesToGig.resx">
+      <DependentUpon>201611010126023_AddForeignKeyPropertiesToGig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
