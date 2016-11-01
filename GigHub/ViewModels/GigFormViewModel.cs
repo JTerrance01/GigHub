@@ -14,10 +14,7 @@ namespace GigHub.ViewModels
 
         public DateTime DateTime
         {
-            get
-            {
-                return DateTime.Parse(string.Format($"{Date}{Time}"));
-            }
+            get { return DateTime.Parse(string.Format("{0} {1}", Date, Time)); }
         }
     }
 }
