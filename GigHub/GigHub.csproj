@@ -198,6 +198,10 @@
     <Compile Include="Migrations\201611010126023_AddForeignKeyPropertiesToGig.Designer.cs">
       <DependentUpon>201611010126023_AddForeignKeyPropertiesToGig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611020218496_AddNameToApplicationUser.cs" />
+    <Compile Include="Migrations\201611020218496_AddNameToApplicationUser.Designer.cs">
+      <DependentUpon>201611020218496_AddNameToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -297,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611010126023_AddForeignKeyPropertiesToGig.resx">
       <DependentUpon>201611010126023_AddForeignKeyPropertiesToGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611020218496_AddNameToApplicationUser.resx">
+      <DependentUpon>201611020218496_AddNameToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
