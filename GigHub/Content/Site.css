@@ -98,7 +98,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-bottom-color: #fff;
 }
 
-/*page level styles*/
+/*page level styles - .gigs */
 
 .gigs {
     list-style: none;
@@ -113,7 +113,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background: red;
     color: white;
     text-align: center;
-    width: 60px;
+    width: 56px;
     border-radius: 8px;
 }
 
@@ -134,12 +134,12 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .gigs > li .details {
     position: absolute;
     top: 0;
-    left: 70px;
+    left: 85px;
 }
 
 .gigs > li .details .artist {
     font-weight: bold;
-    display: block;
+    display: block;    
 }
 
 .gigs > li .details .genre {
