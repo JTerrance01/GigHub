@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 90px;
     padding-bottom: 20px;
-    font-size: 17px;     
+    font-size: 17px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,13 +24,38 @@ textarea {
     max-width: 280px;
 }
 
-/*Validation error color*/
+/* Validation error color */
 span.field-validation-error {
     color: red;
     font-weight: bold;
 }
 
-/*Bootstrap Overrides*/
+/* voffsets used to create margin between the heading and unorder list */
+.voffset {
+    margin-top: 2px;
+}
+
+.voffset1 {
+    margin-top: 5px;
+}
+
+.voffset2 {
+    margin-top: 10px;
+}
+
+.voffset3 {
+    margin-top: 20px;
+}
+
+.voffset4 {
+    margin-top: 40px;
+}
+
+.voffset5 {
+    margin-top: 80px;
+}
+
+/* Bootstrap Overrides */
 .navbar-inverse {
     background-color: #ff4342;
     border-color: #ff4342;
@@ -49,13 +74,12 @@ span.field-validation-error {
     background-color: rgba(205,40,39,0.55);
 }
 
-.navbar-brand {    
+.navbar-brand {
     font-weight: 700;
-
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;    
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .form-group {
@@ -63,10 +87,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .form-control {
-        font-size: 17px;
-        /*padding: 20px 15px;*/
-        -ms-border-radius: 9px;
-        border-radius: 9px;
+    font-size: 17px;
+    /*padding: 20px 15px;*/
+    /*-ms-border-radius: 9px;*/
+    border-radius: 9px;
 }
 
 .form-control:focus {
@@ -75,22 +99,22 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     box-shadow: none;
 }
 
-.btn{
+.btn {
     font-size: 17px;
     /*padding: 7px 20px;
     -ms-border-radius: 9px;
     border-radius: 9px;*/
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: #ff4342;
-    -webkit-box-shadow: none; 
+    -webkit-box-shadow: none;
     box-shadow: none;
-    border-radius: 7px;      
+    border-radius: 7px;
 }
 
 .dropdown-menu > li > a {
-    color: #ffffff;     
+    color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
@@ -98,7 +122,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-bottom-color: #fff;
 }
 
-/*page level styles - .gigs */
+/* page level styles - .gigs */
 
 .gigs {
     list-style: none;
@@ -128,7 +152,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background: #f7f7f7;
     color: #333;
     font-size: 20px;
-    padding: 6px 12px;    
+    padding: 6px 12px;
 }
 
 .gigs > li .details {
@@ -139,7 +163,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .gigs > li .details .artist {
     font-weight: bold;
-    display: block;    
+    display: block;
 }
 
 .gigs > li .details .genre {
