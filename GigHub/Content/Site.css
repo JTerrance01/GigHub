@@ -87,10 +87,9 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .form-control {
-    font-size: 17px;
-    /*padding: 20px 15px;*/
-    /*-ms-border-radius: 9px;*/
+    font-size: 17px;    
     border-radius: 9px;
+    height: 44px;
 }
 
 .form-control:focus {
@@ -168,4 +167,13 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .gigs > li .details .genre {
     font-size: 15px;
+}
+
+.gigs > li .actions {
+    font-size: 15px;
+    display: none;
+}
+
+.gigs > li:hover .actions {
+    display: block;
 }

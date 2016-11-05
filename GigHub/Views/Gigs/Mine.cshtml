@@ -20,11 +20,17 @@
             <div class="details">
                 <span class="artist">
                     @gig.Venue
-                    
+
                 </span>
                 <span class="genre">
                     @gig.Genre.Name
-                </span>                
+                </span>
+                <div class="actions">
+                    @* Pass and anonymous object that equals the id for gigid *@
+                    <a href="@Url.Action("Edit", "Gigs", new { gigid = gig.Id })">
+                        Edit
+                    </a>
+                </div>
             </div>
         </li>
     }
