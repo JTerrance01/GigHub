@@ -34,6 +34,8 @@ namespace GigHub.ViewModels
         {
             get
             {
+                //  NOTE: Avoid using Magic strings and instead use lambda expression
+
                 Expression<Func<GigsController, ActionResult>> update =
                     (c => c.Update(this));
 
