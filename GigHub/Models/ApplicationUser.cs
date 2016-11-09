@@ -17,13 +17,17 @@ namespace GigHub.Models
 
         //  NOTE: When add a property to a class that is a collection
         //  CONT. - you should always initalize it in the constructor
+        //  NOTE: Navigation properties
         public ICollection<Following> Followers { get; set; }
         public ICollection<Following> Followees { get; set; }
+        public ICollection<UserNotification> UserNotifications { get; set; }
 
         public ApplicationUser()
         {
+            //  NOTE: Initialize in the constructor
             Followers = new Collection<Following>();
             Followees = new Collection<Following>();
+            UserNotifications = new Collection<UserNotification>();
         }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
@@ -32,6 +36,12 @@ namespace GigHub.Models
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             // Add custom user claims here
             return userIdentity;
+        }
+
+        public void Notify(Notification notification)
+        {
+            //  NOTE: this points to Application User
+            UserNotifications.Add(new UserNotification(this, notification));
         }
     }
 }

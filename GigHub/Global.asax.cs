@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using GigHub.App_Start;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -9,6 +10,8 @@ namespace GigHub
     {
         protected void Application_Start()
         {
+            AutoMapper.Mapper.Initialize(c => c.AddProfile<MappingProfile>());
+
             //  NOTE: GlobalConfiguration.Configure method add for WebAPI implementation
             GlobalConfiguration.Configure(WebApiConfig.Register);
             AreaRegistration.RegisterAllAreas();
