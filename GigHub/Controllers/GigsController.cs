@@ -59,6 +59,12 @@ namespace GigHub.Controllers
             return View("Gigs", viewModel);
         }
 
+        [HttpPost]
+        public ActionResult Search(GigsViewModel viewModel)
+        {
+            return RedirectToAction("Index", "Home", new { query = viewModel.SearchTerm });
+        }
+
         //  NOTE: The Authorize Attribute controls the login Authorization
         [Authorize]
         public ActionResult Create()
