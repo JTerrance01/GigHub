@@ -21,8 +21,8 @@
                 @Html.ActionLink("The GigHub", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">                    
-                    <li>@Html.ActionLink("Add a Gig", "Create", "Gigs")</li>                    
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Add a Gig", "Create", "Gigs")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -35,7 +35,8 @@
             <p>&copy; @DateTime.Now.Year - GigHub</p>
         </footer>
     </div>
-    @Scripts.Render("~/bundles/lib")    
+    @Scripts.Render("~/bundles/lib")
+    @Scripts.Render("~/bundles/app")
     @RenderSection("scripts", required: false)
     <script type="text/x-template" id="notifications-template">
         <ul class="notifications">
@@ -47,8 +48,8 @@
 
             else if (notification.type == 2) {
             var changes = [],
-                originalValues = [],
-                newValues = [];
+            originalValues = [],
+            newValues = [];
 
             if(notification.originalVenue != notification.gig.venue){
             changes.push('venue');
@@ -57,15 +58,15 @@
             }
 
             if (notification.originalDateTime != notification.gig.dateTime){
-                changes.push('date/time');
-                originalValues.push(moment(notification.originalDateTime).format("D MMM HH:mm"));
-                newValues.push(moment(notification.gig.dateTime).format("D MMM HH:mm"));
+            changes.push('date/time');
+            originalValues.push(moment(notification.originalDateTime).format("D MMM HH:mm"));
+            newValues.push(moment(notification.gig.dateTime).format("D MMM HH:mm"));
             }
 
-                    %>
-                        <li><span class="highlight"><%= notification.gig.artist.name %></span> has changed the <%= changes.join(' and ') %> of the gig from <%= originalValues.join('/') %> to <%= newValues.join('/') %></li>
-                <%
-                }
+            %>
+            <li><span class="highlight"><%= notification.gig.artist.name %></span> has changed the <%= changes.join(' and ') %> of the gig from <%= originalValues.join('/') %> to <%= newValues.join('/') %></li>
+            <%
+            }
             })
             %>
         </ul>

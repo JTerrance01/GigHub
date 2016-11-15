@@ -1,5 +1,6 @@
 ﻿using GigHub.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GigHub.ViewModels
 {
@@ -12,5 +13,9 @@ namespace GigHub.ViewModels
         public string Heading { get; set; }
 
         public string SearchTerm { get; set; }
+
+        //  NOTE: Functions similar to a Dictionary property Tkey, Telement
+        //  CONT: Used to track attendances and update the going button
+        public ILookup<int, Attendance> Attendances { get; set; }
     }
 }
