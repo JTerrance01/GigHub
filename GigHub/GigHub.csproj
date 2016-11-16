@@ -228,6 +228,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Presistence\EntityConfigurations\ApplicationUserConfiguration.cs" />
+    <Compile Include="Presistence\EntityConfigurations\AttendanceConfiguration.cs" />
+    <Compile Include="Presistence\EntityConfigurations\FollowingConfiguration.cs" />
+    <Compile Include="Presistence\EntityConfigurations\GenreConfiguration.cs" />
+    <Compile Include="Presistence\EntityConfigurations\GigConfiguration.cs" />
+    <Compile Include="Presistence\EntityConfigurations\NotificationConfiguration.cs" />
+    <Compile Include="Presistence\EntityConfigurations\UserNotificatonConfiguration.cs" />
     <Compile Include="Presistence\Migrations\201610312054005_InitialModel.cs" />
     <Compile Include="Presistence\Migrations\201610312054005_InitialModel.Designer.cs">
       <DependentUpon>201610312054005_InitialModel.cs</DependentUpon>

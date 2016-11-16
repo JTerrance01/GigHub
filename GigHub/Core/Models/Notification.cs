@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace GigHub.Core.Models
 {
@@ -13,7 +12,7 @@ namespace GigHub.Core.Models
         public string OriginalVenue { get; private set; }
         public DateTime OriginalDateTime { get; private set; }
 
-        [Required]
+        //  NOTE: The property Gig must be a non-nullalbe type - reference Fluent API Configuration
         public Gig Gig { get; private set; }
 
 
