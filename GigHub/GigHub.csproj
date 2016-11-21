@@ -238,7 +238,7 @@
     <Compile Include="Presistence\EntityConfigurations\GigConfiguration.cs" />
     <Compile Include="Presistence\EntityConfigurations\NotificationConfiguration.cs" />
     <Compile Include="Presistence\EntityConfigurations\UserNotificatonConfiguration.cs" />
-    <Compile Include="Presistence\IApplicationDbContext.cs" />
+    <Compile Include="Core\IApplicationDbContext.cs" />
     <Compile Include="Presistence\Migrations\201610312054005_InitialModel.cs" />
     <Compile Include="Presistence\Migrations\201610312054005_InitialModel.Designer.cs">
       <DependentUpon>201610312054005_InitialModel.cs</DependentUpon>

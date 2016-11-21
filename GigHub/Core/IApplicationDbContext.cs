@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
 using GigHub.Core.Models;
 
-namespace GigHub.Presistence
+namespace GigHub.Core
 {
     public interface IApplicationDbContext
     {

@@ -2,6 +2,7 @@
 using GigHub.Presistence.EntityConfigurations;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
+using GigHub.Core;
 
 namespace GigHub.Presistence
 {

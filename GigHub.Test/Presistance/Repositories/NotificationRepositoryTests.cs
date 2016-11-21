@@ -4,6 +4,7 @@ using GigHub.Presistence.Repositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System.Data.Entity;
+using GigHub.Core;
 
 namespace GigHub.Test.Presistance.Repositories
 {
