@@ -1,17 +1,17 @@
-﻿using System;
+﻿using GigHub.Core.Models;
+using GigHub.Core.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using GigHub.Core.Models;
-using GigHub.Core.Repositories;
 
 namespace GigHub.Presistence.Repositories
 {
     public class GigRepositroy : IGigRepositroy
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
 
-        public GigRepositroy(ApplicationDbContext context)
+        public GigRepositroy(IApplicationDbContext context)
         {
             _context = context;
         }

@@ -1,15 +1,15 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using GigHub.Core.Models;
+﻿using GigHub.Core.Models;
 using GigHub.Core.Repositories;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace GigHub.Presistence.Repositories
 {
     public class FollowingRepository : IFollowingRepository
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IApplicationDbContext _context;
 
-        public FollowingRepository(ApplicationDbContext context)
+        public FollowingRepository(IApplicationDbContext context)
         {
             _context = context;
         }

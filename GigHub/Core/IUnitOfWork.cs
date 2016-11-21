@@ -8,6 +8,8 @@ namespace GigHub.Core
         IFollowingRepository Follows { get; }
         IGenreRepository Genres { get; }
         IGigRepositroy Gigs { get; }
+        INotificationRepository Notifications { get; }
+        IUserNotificationRepository UserNotifications { get; }
 
         void Complete();
     }
